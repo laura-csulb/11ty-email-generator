@@ -1,0 +1,48 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "watch:sass": {
+      "name": "watch:sass",
+      "command": "npm run watch:sass",
+      "runAtStart": false
+    },
+    "watch:eleventy": {
+      "name": "watch:eleventy",
+      "command": "npm run watch:eleventy",
+      "runAtStart": false
+    },
+    "build:sass": {
+      "name": "build:sass",
+      "command": "npm run build:sass",
+      "runAtStart": false
+    },
+    "build:eleventy": {
+      "name": "build:eleventy",
+      "command": "npm run build:eleventy",
+      "runAtStart": false
+    },
+    "prefix": {
+      "name": "prefix",
+      "command": "npm run prefix",
+      "runAtStart": false
+    },
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    }
+  }
+}
